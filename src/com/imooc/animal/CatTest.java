@@ -6,6 +6,7 @@ public class CatTest {
         //另开一个类用main方法进行对象实例化操作
         //类名 自取名=new 类名()
         Cat one=new Cat();
+        Cat two=new Cat();//开辟另一个空间
         one.run();
         one.eat();
         //测试  重新赋值
@@ -13,10 +14,19 @@ public class CatTest {
         one.month=6;
         one.weight=1600;
         one.species="英国短毛猫";
+        two.name="小白";
+        two.month=6;
+        two.weight=1600;
+        two.species="英国短毛猫";
         System.out.println("年龄："+one.month);
         System.out.println("体重："+one.weight);
         System.out.println("品种："+one.species);
         System.out.println("昵称："+one.name);
+        System.out.println("--------------------");
+        System.out.println("年龄："+two.month);
+        System.out.println("体重："+two.weight);
+        System.out.println("品种："+two.species);
+        System.out.println("昵称："+two.name);
         //小猫快跑！
         //小猫吃鱼。
         //年龄：6
