@@ -21,6 +21,10 @@ public class Cat {
     public void run(String name){
         System.out.println(name+"快跑！");
     }
+
+    public Cat(){
+        System.out.println("我是无参构造方法");
+    }
     //吃东西的方法(method)
     public void eat(){
         System.out.println("小猫吃鱼。");

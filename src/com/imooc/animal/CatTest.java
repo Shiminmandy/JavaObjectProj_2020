@@ -7,7 +7,8 @@ public class CatTest {
         //类名 自取名=new 类名()
         Cat one=new Cat();
         Cat two=new Cat();//开辟另一个空间
-        one.run();
+        //Cat two=one; one的信息会被two的操作完全覆盖掉
+        //one.run();
         one.eat();
         //测试  重新赋值
         one.name="小白";
@@ -35,5 +36,8 @@ public class CatTest {
         //昵称：小白
         one.run("小白");
         //小白快跑！
+
+        //匿名对象进行方法调用
+        new Cat().run();
     }
 }
