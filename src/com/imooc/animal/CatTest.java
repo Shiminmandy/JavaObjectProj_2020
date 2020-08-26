@@ -40,5 +40,7 @@ public class CatTest {
 
         //匿名对象进行方法调用
         new Cat().run();
+        Cat three=new Cat("小花");
+        System.out.println("这是"+three.name);
     }
 }
