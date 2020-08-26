@@ -19,6 +19,7 @@ public class CatTest {
         two.month=6;
         two.weight=1600;
         two.species="英国短毛猫";
+        //调用属性时不加括号，调用方法时加括号
         System.out.println("年龄："+one.month);
         System.out.println("体重："+one.weight);
         System.out.println("品种："+one.species);
