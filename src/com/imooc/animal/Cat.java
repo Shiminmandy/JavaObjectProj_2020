@@ -25,6 +25,10 @@ public class Cat {
     public Cat(){
         System.out.println("我是无参构造方法");
     }
+    public Cat(String name){
+        this.name=name;
+        System.out.println("我是带参构造方法");
+    }
     //吃东西的方法(method)
     public void eat(){
         System.out.println("小猫吃鱼。");
