@@ -1,8 +1,8 @@
 package com.imooc.animal;
 
-public class CatTest1 {
+public class DogTest {
     public static void main(String args){
-        Cat1 one=new Cat1();
+        Dog one=new Dog();
         one.name="花花";
         one.call();
     }

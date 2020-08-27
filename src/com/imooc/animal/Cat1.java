@@ -4,7 +4,7 @@ public class Cat1 {
     //成员属性：昵称
     String name;//昵称
 
-    public void run(Cat one){
+    public void run(Cat1 one){
         System.out.println("昵称为："+one.name+"的小猫在奔跑");
     }
 
