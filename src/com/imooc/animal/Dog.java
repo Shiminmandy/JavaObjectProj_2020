@@ -1,10 +1,10 @@
 package com.imooc.animal;
 
-public class Cat1 {
+public class Dog {
     //成员属性：昵称
     String name;//昵称
 
-    public void run(Cat1 one){
+    public void run(Dog one){
         System.out.println("昵称为："+one.name+"的小猫在奔跑");
     }
 
