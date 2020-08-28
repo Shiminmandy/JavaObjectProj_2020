@@ -17,17 +17,17 @@ public class Book {
     */
     public String getName(){
 
-        return "书名："+name;
+        return "书名："+this.name;//虽然this可以省略，但为了以后其他语言学习，都加上this
     }
 
 
     public String getAuthor(){
-        return "作者："+author;
+        return "作者："+this.author;
     }
 
 
     public String getCopyRight(){
-        return "出版社："+copyRight;
+        return "出版社："+this.copyRight;
     }
 
     public void setCopyRight(String copyRight){
@@ -35,7 +35,7 @@ public class Book {
     }
 
     public double getPrice(){
-        return price;
+        return this.price;
     }
 
     public void setPrice(double price){
