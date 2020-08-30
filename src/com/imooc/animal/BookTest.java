@@ -4,6 +4,7 @@ public class BookTest {
     // 测试方法
     public static void main(String[] args) {
         //实例化对象，调用相关方法实现运行效果
+        Book.display();//类名+方法名--》调用静态方法
         Book b1=new Book("红楼梦","曹雪芹","人民文学出版社",0.0);
         b1.info();
         System.out.println("=====================================");

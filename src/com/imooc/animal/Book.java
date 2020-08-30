@@ -1,9 +1,17 @@
 package com.imooc.animal;
 
+
+//static+类--》不存在
+//static+方法内局部变量--》不存在
 public class Book {
     //私有属性：书名、作者、出版社、价格
     private String name,author,copyRight;
     private double price;
+
+    //static: 静态 静态成员、类成员
+    //static+属性--》静态属性、类属性
+    public static int amount;//数量
+
     //通过构造方法实现属性赋值
     public Book(String name,String author,String copyRight,double price){
         this.name=name;
@@ -47,6 +55,14 @@ public class Book {
         }
     }
     //信息介绍方法，描述图书所有信息
+
+    //static+方法--》类方法、静态方法
+    //在成员方法中，可以直接访问类中静态成员
+    //静态方法中不能直接访问同一个类中的非静态成员，只能直接调用静态成员
+    //静态方法中不能使用this
+    public static void display(){
+        System.out.println("以下为图书信息：");
+    }
 
     public void info(){
         System.out.println(getName());
