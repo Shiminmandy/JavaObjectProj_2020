@@ -42,7 +42,9 @@ public class Student {
 
     public void setStudentGender(String studentGender) {
         //限制性别只能是男或女,反之，赋值为男
-        if(studentGender=="男"||studentGender=="女")
+//        if(studentGender=="男"||studentGender=="女")
+        //用equals()进行对象内容比较更好
+        if("男".equals(studentGender)||"女".equals(studentGender))
             this.studentGender = studentGender;
         else
             this.studentGender="男";
