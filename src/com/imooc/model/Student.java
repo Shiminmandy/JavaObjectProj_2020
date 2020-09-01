@@ -70,8 +70,33 @@ public class Student {
      * @return 自我介绍的信息，包括姓名、学号、性别、年龄
      */
     public String introduction(){
-        String str="学生信息如下：\n姓名："+getStudentName()+"\n学号："+getStudentNo()
-                +"\n性别："+getStudentGender() +"\n年龄："+getStudentAge();
+        String str="学生信息如下：\n姓名："+this.getStudentName()+"\n学号："+this.getStudentNo()
+                +"\n性别："+this.getStudentGender() +"\n年龄："+this.getStudentAge();
+        return str;
+    }
+
+    /**
+     * 学生自我介绍的方法(方法1)
+     * @param subjectName 所学专业名称
+     * @param subjectLife 学制年限
+     * @return 自我介绍的信息，包括姓名、学号、性别、年龄、所报专业、学制年限
+     */
+    public String introduction(String subjectName,int subjectLife){
+        String str="学生信息如下：\n姓名："+this.getStudentName()+"\n学号："+this.getStudentNo()
+                +"\n性别："+this.getStudentGender() +"\n年龄："+this.getStudentAge()+
+                "\n所报专业："+subjectName+"\n学制年限："+subjectLife;
+        return str;
+    }
+
+    /**
+     * 学生自我介绍的方法(方法2)
+     * @param mySbuject 所选专业的对象
+     * @return 自我介绍的信息，包括姓名、学号、性别、年龄、所报专业、学制年限
+     */
+    public String introduction(Subject mySbuject){//传入一个subject类型的对象
+        String str="学生信息如下：\n姓名："+this.getStudentName()+"\n学号："+this.getStudentNo()
+                +"\n性别："+this.getStudentGender() +"\n年龄："+this.getStudentAge()+
+                "\n所报专业："+mySbuject.getSubjectName()+"\n学制年限："+mySbuject.getSubjectLife();
         return str;
     }
 }

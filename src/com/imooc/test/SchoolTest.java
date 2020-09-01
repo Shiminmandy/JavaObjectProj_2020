@@ -9,5 +9,9 @@ public class SchoolTest {
         System.out.println(sub1.info());
         Student stu1=new Student("S01","张三","男",18);
         System.out.println(stu1.introduction());
+        Student stu2=new Student("S02","李四","女",17);
+        System.out.println(stu2.introduction("计算机科学与应用",4));
+        Student stu3=new Student("S03","王五","男", 18);
+        System.out.println(stu3.introduction(sub1));
     }
 }
