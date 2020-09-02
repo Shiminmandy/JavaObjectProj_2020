@@ -1,23 +1,34 @@
 package com.imooc.model;
 
 public class Student {
-    //成员属性：学号、姓名、性别、年龄
+    //成员属性：学号、姓名、性别、年龄、专业
     private String studentNo;
     private String studentName;
     private String studentGender;
     private int studentAge;
+    //方法3
+    private Subject studentSubject;
 
     //无参构造
     public Student(){
 
     }
 
-    //多参构造，实现对全部属性的赋值
+    //多参构造方法，实现对学号、姓名、性别、年龄的赋值
     public Student(String studentNo,String studentName,String studentGender,int studentAge){
         this.setStudentNo(studentNo);
         this.setStudentName(studentName);
         this.setStudentGender(studentGender);
         this.setStudentAge(studentAge);
+    }
+
+    //多参构造，实现对全部属性的赋值
+    public Student(String studentNo,String studentName,String studentGender,int studentAge,Subject studentSubject){
+        this.setStudentNo(studentNo);
+        this.setStudentName(studentName);
+        this.setStudentGender(studentGender);
+        this.setStudentAge(studentAge);
+        this.setStudentSubject(studentSubject);
     }
 
     public String getStudentNo() {
@@ -66,12 +77,28 @@ public class Student {
     }
 
     /**
+     * 获取专业对象，如果没有实例化，先实例化后再返回
+     * @return 专业对象信息
+     */
+    public Subject getStudentSubject() {
+        if(this.studentSubject==null){
+            this.studentSubject=new Subject();//已经在Subject类中构造无参方法
+        }
+        return this.studentSubject;
+    }
+
+    public void setStudentSubject(Subject studentSubject) {
+        this.studentSubject = studentSubject;
+    }
+
+    /**
      * 学生自我介绍的方法
      * @return 自我介绍的信息，包括姓名、学号、性别、年龄
      */
     public String introduction(){
         String str="学生信息如下：\n姓名："+this.getStudentName()+"\n学号："+this.getStudentNo()
-                +"\n性别："+this.getStudentGender() +"\n年龄："+this.getStudentAge();
+                +"\n性别："+this.getStudentGender() +"\n年龄："+this.getStudentAge()+ "\n所报专业："+
+                this.getStudentSubject().getSubjectName()+"\n学制年限："+this.getStudentSubject().getSubjectLife();
         return str;
     }
 
