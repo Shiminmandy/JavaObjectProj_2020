@@ -1,8 +1,11 @@
 package com.imooc.test;
-import com.imooc.model.Company;
-import com.imooc.model.Employee;
+import com.imooc.model.Department;
 
 public class ManagementTest {
-    //实例化company类
-    Company com1=new Company("人事部","经理");
+    public static void main(String[] args){
+        //实例化company类
+        Department com1 = new Department("人事部", "D001");
+        System.out.println(com1.info());
+    }
+
 }
