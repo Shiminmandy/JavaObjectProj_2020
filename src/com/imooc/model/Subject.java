@@ -73,6 +73,14 @@ public class Subject {
         this.myStudents = myStudents;
     }
 
+    public int getStudentNum() {
+        return studentNum;
+    }
+
+    public void setStudentNum(int studentNum) {
+        this.studentNum = studentNum;
+    }
+
     /**
      * 专业介绍的方法
      * @return 专业介绍的相关信息，包括名称、编号、年限
@@ -81,5 +89,21 @@ public class Subject {
         String str="专业信息如下：\n专业名称："+this.getSubjectName()+"\n专业编号："
                 +this.getSubjectNo()+"\n学制年限："+this.getSubjectLife();
         return str;
+    }
+    public void addStudent(Student a){
+        /**
+         * 1.将学生保存到数组中
+         * 2.将学生个数保存到studentNum
+         */
+        //1.将学生保存到数组中
+        for(int i=0;i<this.getMyStudents().length;i++){
+            if(this.getMyStudents()[i]==null){
+                a.setStudentSubject(this);
+                this.getMyStudents()[i]=a;
+                //2.将学生个数保存到studentNum
+                this.studentNum=i+1;
+                return;//break也可以，因为跳出循环后下面没有语句执行了
+            }
+        }
     }
 }
