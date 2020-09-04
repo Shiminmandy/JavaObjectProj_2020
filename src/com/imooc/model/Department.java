@@ -4,6 +4,8 @@ public class Department {
     //成员属性：所在部门、职务
     private String departmentName;
     private String departmentNo;
+    private Employee[] employee;
+    private int employeeNum;
 
     //无参构造
     public Department(){
@@ -30,6 +32,23 @@ public class Department {
 
     public void setDepartmentNo(String departmentNo) {
         this.departmentNo = departmentNo;
+    }
+
+    public Employee[] getEmployee() {
+
+        return employee;
+    }
+
+    public void setEmployee(Employee[] employee) {
+        this.employee = employee;
+    }
+
+    public int getEmployeeNum() {
+        return employeeNum;
+    }
+
+    public void setEmployeeNum(int employeeNum) {
+        this.employeeNum = employeeNum;
     }
 
     public String info(){
