@@ -32,6 +32,15 @@ public class ManagementTest {
         System.out.println("=========================================");
         Employee e6=new Employee("米莉","S006","女",24,d2,p3);
         System.out.println(e6.intro());
+        System.out.println("=========================================");
+        d1.addEmployee(e1);
+        d1.addEmployee(e2);
+        d1.addEmployee(e3);
+        System.out.println("人事部总共有"+d1.getEmployeeNum1()+"名员工");
+        d1.addEmployee2(e4);
+        d1.addEmployee2(e5);
+        d1.addEmployee2(e6);
+        System.out.println("市场部总共有"+d1.getEmployeeNum2()+"名员工");
     }
 
 }
