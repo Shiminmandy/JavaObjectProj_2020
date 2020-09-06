@@ -3,7 +3,7 @@ package com.imooc.animal;
 public class Dog extends Animal{
     private String Gender;//性别
 
-    private Dog(){
+    public Dog(){
 
     }
 
