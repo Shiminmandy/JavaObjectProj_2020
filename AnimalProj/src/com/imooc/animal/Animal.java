@@ -37,4 +37,8 @@ public class Animal {
     public void eat(){
         System.out.println(this.getName()+"在吃东西");
     }
+
+    public void eat(String name){
+        System.out.println(name+"在吃东西");
+    }
 }
