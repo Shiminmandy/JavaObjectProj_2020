@@ -14,6 +14,8 @@ public class Test {
         two.setMonth(1);
         two.eat();
         two.sleep();
+        System.out.println("===============================");
+        two.eat("凡凡");
 
     }
 }
