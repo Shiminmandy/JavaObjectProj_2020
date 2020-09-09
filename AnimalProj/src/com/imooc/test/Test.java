@@ -8,6 +8,7 @@ public class Test {
         one.setSpecies("中华田园猫");
         one.eat();
         one.run();
+        System.out.println(one.temp);
         System.out.println("===============================");
         Dog two=new Dog();
         two.setName("妞妞");

@@ -4,6 +4,7 @@ public class Animal {
     private String name;//昵称
     private int month;//月份
     private String species;//品种
+    public int temp=15;
 
     public Animal(){
 
