@@ -8,9 +8,10 @@ public class Animal {
      */
     private String name;//昵称
     private int month;//月份
-    private String species;//品种
+    String species;//品种
     public int temp=15;
 
+    //父类构造不允许被继承，不允许被重写
     public Animal(){
 
     }

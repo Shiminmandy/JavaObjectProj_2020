@@ -16,6 +16,9 @@ public class Dog extends Animal{
     }
 
     public void sleep() {
+        //super: 父类对象的引用
+        super.eat();
+        super.species="犬科";
         System.out.println(this.getName() + "现在" + this.getMonth() + "个月大，它在睡觉");
     }
 
