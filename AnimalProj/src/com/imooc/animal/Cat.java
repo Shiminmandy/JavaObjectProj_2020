@@ -23,7 +23,7 @@ public class Cat extends Animal{
          * super()必须放在子类构造方法有效代码第一行
          * 
          */
-        super(name,month);
+        super(name,month);//this、super都不能够在静态方法下使用
         System.out.println("我是子类的带参构造方法");
     }
     public double getWeight() {
