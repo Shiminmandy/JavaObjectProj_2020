@@ -21,7 +21,6 @@ public class Cat extends Animal{
         /*子类构造默认调用父类无参方法
          * 可以通过super()调用父类允许被访问的其他构造方法
          * super()必须放在子类构造方法有效代码第一行
-         * 
          */
         super(name,month);//this、super都不能够在静态方法下使用
         System.out.println("我是子类的带参构造方法");
