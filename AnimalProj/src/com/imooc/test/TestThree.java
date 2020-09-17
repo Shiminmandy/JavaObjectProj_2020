@@ -26,3 +26,4 @@ one和two的引用比较：false
 str1和str2的引用比较：false
 str1和str2的引用比较：false
  */
+//after rewrite equals: one和two的引用比较：true

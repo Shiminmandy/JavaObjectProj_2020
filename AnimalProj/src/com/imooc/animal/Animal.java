@@ -65,4 +65,29 @@ public class Animal {
     public void jump(){
         System.out.println("动物跳跃是一种本能");
     }
+
+    public boolean equals(Object obj){
+        if(obj==null)
+            return false;
+        Animal temp=(Animal)obj;
+        if(this.getName().equals(temp.getName())&&(this.getMonth()==temp.getMonth()))
+            return true;
+        else
+            return false;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
