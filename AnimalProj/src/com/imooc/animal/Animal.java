@@ -66,6 +66,7 @@ public class Animal {
         System.out.println("动物跳跃是一种本能");
     }
 
+    //方法重写rewrite
     public boolean equals(Object obj){
         if(obj==null)
             return false;
@@ -76,6 +77,15 @@ public class Animal {
             return false;
     }
 
+    //方法重载reload
+    public boolean equals(Animal obj){
+        if(obj==null)
+            return false;
+        if(this.getName().equals(obj.getName())&&(this.getMonth()==obj.getMonth()))
+            return true;
+        else
+            return false;
+    }
 
 
 
