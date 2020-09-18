@@ -67,6 +67,11 @@ public class Animal {
     }
 
     //方法重写rewrite
+
+    public String toString(){
+        return "昵称："+this.getName()+";年龄："+this.getMonth();
+    }
+
     public boolean equals(Object obj){
         if(obj==null)
             return false;
@@ -85,6 +90,9 @@ public class Animal {
             return true;
         else
             return false;
+
+
+
     }
 
 
