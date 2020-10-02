@@ -9,5 +9,9 @@ public class Test {
         Animal one=new Animal();// 1
         Animal two=new Cat();// 2
         Animal three=new Dog();//3
+
+        one.eat();
+        two.eat();
+        three.eat();
     }
 }
