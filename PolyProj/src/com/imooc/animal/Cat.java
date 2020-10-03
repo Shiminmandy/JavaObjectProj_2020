@@ -21,4 +21,7 @@ public class Cat extends Animal {
     }
 
     //方法：跑动
+    public void run(){
+        
+    }
 }
