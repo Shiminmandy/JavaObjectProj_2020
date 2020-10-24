@@ -2,6 +2,3 @@
 intro to OOP
 
 
-
-
-
