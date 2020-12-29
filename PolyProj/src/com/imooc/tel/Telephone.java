@@ -29,6 +29,6 @@ public class Telephone {
 
     //打电话
     public void call(){
-        System.out.println("手机可以打电话");
+        System.out.println("手机可以打电话。");
     }
 }
